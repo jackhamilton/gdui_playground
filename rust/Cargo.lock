@@ -230,6 +230,22 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a846cbc04412cf509efcd8f3694b114fc700a035fb5a37f21517f9fb019f1ebc"
 
 [[package]]
+name = "opencompose-rs"
+version = "0.1.0"
+dependencies = [
+ "opencompose-rs-macros",
+]
+
+[[package]]
+name = "opencompose-rs-macros"
+version = "0.1.0"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "option-ext"
 version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -300,6 +316,7 @@ dependencies = [
  "freezable-trait",
  "godot",
  "mutex",
+ "opencompose-rs",
  "regex",
  "serde",
  "serde_json",
